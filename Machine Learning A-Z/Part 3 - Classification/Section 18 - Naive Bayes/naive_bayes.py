@@ -21,9 +21,9 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
 # Fitting classifier to the Training set
-from sklearn.navie_bayes import GaussianNB
-classifer = GaussianNB()
-classifer.fit(X_train, y_train)
+from sklearn.naive_bayes import GaussianNB
+classifier = GaussianNB()
+classifier.fit(X_train, y_train)
 
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)
